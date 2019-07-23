@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anunciar Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://globocom.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://globocom.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbars/">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html" id="link_logo">
+                <img src="img/logo.png" id="logo">
+            </a>
+
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Produtos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="#">Monitores</a>
+                            <a class="dropdown-item" href="#">Mouses</a>
+                            <a class="dropdown-item" href="#">Teclado</a>
+                            <a class="dropdown-item" href="#">Gabinetes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="anunciar_produto.html">Anuncie Aqui!
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="O que voce procura?">
+                </form>
+
+                <a href="cadastro_pessoa.html" id="link_cadastro">Cadastro</a>
+                <a href="Tela_login.html" id="link_login">Entrar</a>
+                <a href="tela_carrinho.html">
+                    <i class="fas fa-shopping-cart" id="carrinho"></i>
+                </a>
+
+            </div>
+        </nav>
+    </div>
+
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/1.jpg" alt="">
+                <div class="container">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+                <div class="container">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <!-- /.carousel -->
+
+
+    <div class="container" id="anunciar_produto">
+        <section>
+            <div>
+                <center>
+                    <H1>Anunciar Produto</H1>
+                </center>
+            </div>
+            <form class="was-validated" style="padding-top: 70px">
+                <div class="form-group" style="max-width: 500px;float: left">
+                    <h5>DADOS DO PRODUTO</h5>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" aria-label="name" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="box_select">
+                            <select class="custom-select" style="width: 200px" required>
+                                <option value="">Tipo de produto</option>
+                                <option value="1">Tipo 1</option>
+                                <option value="2">Tipo 2</option>
+                                <div class="invalid-feedback">Selecione o tipo de produto</div>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content_form_l">
+                        <div class="input-group-prepend">
+                            <input type="text" class="form-control" style="width: 445px" placeholder="Descrição" aria-label="text" aria-describedby="basic-addon1"
+                                required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="number" min="0" max="100" class="form-control" style="width: 100px; margin-top: 13px" placeholder="QTD" aria-label="number"
+                                aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="number" step="0.01" min="0" max="999999" class="form-control" style="width: 170px; margin-top: 13px" placeholder="Preço unitário"
+                                aria-label="number" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="box_select">
+                            <select class="custom-select" style="width: 120px; margin-top: 13px" required>
+                                <option value="">Moeda</option>
+                                <option value="1">Real(R$)</option>
+                                <option value="2">Dolar($)</option>
+                                <option value="3">Euro(€)</option>
+                                <div class="invalid-feedback">Selecione a Moeda</div>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content_form_l">
+                        <div class="box_select">
+                            <select class="custom-select" style="width: 250px;" required>
+                                <option value="">Entrega</option>
+                                <option value="1">Sedex</option>
+                                <option value="2">Fedex</option>
+                                <option value="3">Transportadora Propria</option>
+                                <div class="invalid-feedback">Selecione a Moeda</div>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="input_img">
+                        <H5>INSERIR IMAGENS</H5>
+                        <div class="col-sm-6 offset-sm-3" style="margin: 1%; width: 150px">
+                            <div class="form-group inputDnD">
+                                <label class="sr-only" for="inputFile">File Upload</label>
+                                <input type="file" style="width: 150px;height: 100px" class="form-control-file  text-danger font-weight-bold" id="inputFile"
+                                    accept="image/*" onchange="readUrl(this)" data-title="Arraste e solte">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 offset-sm-3" style="margin: 1%; width: 150px">
+                            <div class="form-group inputDnD">
+                                <label class="sr-only" for="inputFile">File Upload</label>
+                                <input type="file" style="width: 150px;height: 100px" class="form-control-file text-danger font-weight-bold" id="inputFile"
+                                    accept="image/*" onchange="readUrl(this)" data-title="Arraste e solte">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 offset-sm-3" style="margin: 1%; width: 150px">
+                            <div class="form-group inputDnD">
+                                <label class="sr-only" for="inputFile">File Upload</label>
+                                <input type="file" style="width: 150px;height: 100px" class="form-control-file text-danger font-weight-bold" id="inputFile"
+                                    accept="image/*" onchange="readUrl(this)" data-title="Arraste e solte">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 offset-sm-3" style="margin: 1%; width: 150px">
+                            <div class="form-group inputDnD">
+                                <label class="sr-only" for="inputFile">File Upload</label>
+                                <input type="file" style="width: 150px;height: 100px" class="form-control-file text-danger font-weight-bold" id="inputFile"
+                                    accept="image/*" onchange="readUrl(this)" data-title="Arraste e solte">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 offset-sm-3" style="margin: 1%; width: 150px">
+                            <div class="form-group inputDnD">
+                                <label class="sr-only" for="inputFile">File Upload</label>
+                                <input type="file" style="width: 150px;height: 100px" class="form-control-file text-danger font-weight-bold" id="inputFile"
+                                    accept="image/*" onchange="readUrl(this)" data-title="Arraste e solte">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        <div class="form-group form-check">
+                            <a href=" #">Termos de anuncio</a>
+                            <br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Concordo com os termos</label>
+                        </div>
+                        <div>
+                            <button>Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="max-width: 400px; float: right">
+                    <h5>LOCAL DO PRODUTO</h5>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Cidade" aria-label="name" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Estado" aria-label="name" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Pais" aria-label="name" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="content_form_l">
+                        <div class="input-group mb-3">
+                            <input type="text" maxlength="11" class="form-control" placeholder="Cep" aria-label="name" aria-describedby="basic-addon1"
+                                required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h3>Institucional</h3>
+                    <a href="#">Quem somos</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>Suporte</h3>
+                    <a href="#">Entrega</a><br>
+                    <a href="#">Politica de privacidade</a><br>
+                    <a href="#">Contate-nos</a><br>
+                </div>
+                <div class="col-md-3">
+                    <h3>Meus pedidos</h3>
+                    <a href="#">Meus pedidos</a><br>
+                    <a href="#">Garantia</a><br>
+                    <a href="#">Contate-nos</a><br>
+                    <a href="#">Anuncie aqui!</a><br>
+                </div>
+
+                <div>
+                    <img class="logo" src="img/logo.png">
+                    <div class="imgSocial">
+                        <img src="img/facebook.png">
+                        <img src="img/Instagram.png">
+                        <img src="img/gmail.png">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="imgPagamento">
+                <h3 style="color: white">Forma de pagamento</h3>
+                <img src="img/mastercard.png">
+                <img src="img/boleto.png">
+                <img src="img/paypal.png">
+                <img src="img/visa.png">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="http://globocom.github.io/bootstrap/assets/js/jquery.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-alert.js   "></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://globocom.github.io/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+    <script>
+        !function ($) {
+            $(function () {
+                // carousel demo
+                $('#myCarousel').carousel()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>
